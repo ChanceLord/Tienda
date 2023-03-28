@@ -23,11 +23,13 @@
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Tienda</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Productos</a></li>
+                <li class="sidebar-nav-item"><a href="#calculadora">Calcular y Anotar Pedido</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Articulos Destacados</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Clientes</a></li>
+                <li class="sidebar-nav-item"><a href="#catalogo">Descargar Catalogo</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
         <nav style="position: fixed;" id="fechayhora">
@@ -75,7 +77,12 @@
 
         
         <!-- Callout-->
-        <section class="callout">
+        <section class="callout" id="calculadora">
+        <div class="container">  
+       <div class="row">
+       <div class="col-6">
+        
+            <!-- calculadora -->
             <div class="container px-4 px-lg-5 text-center">
                 <div id="appBg">
                     <form name="calculator">
@@ -105,126 +112,99 @@
                     </form>
                 </div>
             </div>
-        </section><!-- Services-->
+            <!-- calculadora fin -->
+        </div>
+            
+
+        <div class="col-6">
+            <section class="lista">
+                <h1 class="hlist">Lista de Compras</h1>
+                <p><b> pulse en la x para eliminar pendiente </b></p>
+                <p>(Las listas hechas en esta sección no se guardan al refrescar la página. <br> Está hecha para mantener un listado de los articulos a comprar en este sitio)</p>
+                <input type="text" id="tarea">
+                <button id="agregar">Agregar</button>
+        
+                <h3>Lista :<span id="cantidad"> 0</span></h3>
+                <ul id="listado">
+        
+                </ul>
+            </section>
+        </div>
+        </div>
+        </div>
+        </section>
+        <!-- Services-->
        
 
         <section class="content-section bg-primary text-white text-center" id="services">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
+                    <h3 class="text-secondary mb-0">Articulos Destacados</h3>
+                    <h2 class="mb-5">lo más vendido</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
+                    
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                        <img src="assets/productos/lapices.jpg" class="mx-auto mb-3" style="width: 50%; border-radius: 20%;">
+                        <h4><strong>Lapices</strong></h4>
+                        <a style="border-radius: 10px;" class="btn btn-xl btn-dark" href="#!">Añadir al Carrito</a>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                        <img src="assets/productos/calculadora.jpg" class="mx-auto mb-3" style="width: 70%; border-radius: 20%;">
+                        <h4><strong>Calculadora Casio</strong></h4>
+                        <a style="border-radius: 10px;" class="btn btn-xl btn-dark" href="#!">Añadir al Carrito</a>
                     </div>
+                    
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
+                        <img src="assets/productos/cartuchera.jpeg" class="mx-auto mb-3" style="width: 50%; border-radius: 20%;">
+                        <h4><strong>Cartuchera</strong></h4>
+                        <a style="border-radius: 10px;" class="btn btn-xl btn-dark" href="#!">Añadir al Carrito</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
+                        <img src="assets/productos/cuadernos.jpg" class="mx-auto mb-3" style="width: 50%; border-radius: 20%;">
+                        <h4><strong>Cuadernos</strong></h4>
+                        <a style="border-radius: 10px;" class="btn btn-xl btn-dark" href="#!">Añadir al Carrito</a>
                     </div>
                 </div>
             </div>
+            <br>
         </section>
         <!-- Portfolio-->
+        <br>
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <h3 class="text-secondary mb-0">Nuestros Clientes</h3>
+                    <h2 class="mb-5">los más destacados</h2>
                 </div>
                 <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
+                    <img src="assets/productos/Sin título.png" alt="">
                 </div>
             </div>
         </section>
+        <br><br>
         <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
+        
+        <section id="catalogo" class="content-section bg-primary text-white">
+            <br>
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <h2 class="mb-4">¿Quieres ver todos los Productos?</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Descarga nuestro catalogo digital</a>
+            <br><br>
             </div>
         </section>
         <!-- Map-->
         <div class="map" id="contact">
+            <div class="masthead d-flex align-items-center">
+                <div class="container px-4 px-lg-5 text-center">
+                    <h1 class="mb-1">Contactanos</h1>
+                    <h3 class="mb-5"><em> ejemplo@gmail.com</em></h3>
+                    <a class="btn btn-primary btn-xl" href="#about">WhattsApp</a>
+                </div>
+            </div>
         </div>
         <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
-            </div>
-        </footer>
+        
    
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
@@ -233,6 +213,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/smile.js"></script>
-        <script src="datos/productos.js"></script>
     </body>
 </html>

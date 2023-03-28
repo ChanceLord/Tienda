@@ -11620,3 +11620,58 @@ footer.footer .social-link:hover {
   background-color: gray !important;
   color: white ! important;
 }
+
+
+
+.lista {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffc107;
+}
+
+
+#tarea {
+  width: 70%;
+  padding: 10px;
+}
+
+#agregar {
+  width: 20%;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+#listado {
+  text-align: left;
+}
+
+#listado li {
+  border-bottom: 1px dashed #333;
+  font-size: 25px;
+  margin: 8px 0;
+}
+
+#cantidad {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: red;
+
+  cursor: pointer;
+}
+

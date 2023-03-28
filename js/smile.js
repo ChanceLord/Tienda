@@ -77,31 +77,49 @@ if(evento.target && evento.target.tagName=="IMG"){
 
 
 
+//lista
 
-//parametros para cambiar fondo con un click sin usar api
-//  const aFondos = ['borradores.jpg','lapices.jpg',
-//  'cuadernos.jpg','sacapunta.jpg']
+//tomamos los elementos
+var inputTarea = document.getElementById("tarea");
+var btn = document.getElementById("agregar");
+var listado = document.getElementById("listado");
+var cantidad = document.getElementById("cantidad");
 
-//  cambiarFondosEl.addEventListener('click', (e) =>{
-//      if(e.target && e.target.tagName == "IMG"){
-//          heroEl.style.backgroundImage =`url(assets/productos/${aFondos[e.target.id]})`
-//      }
+//variable que lleva la cantidad de tareas
+var total = 0;
 
-//  })
+btn.onclick = function() {
+    //controlamos si el campo esta vacio
+    if (inputTarea.value == "") {
+        return;
+    }
+    //tomamos el valor del campo
+    var elemento = inputTarea.value;
+    //creo un elemento li
+    var li = document.createElement("li");
+    //le agrego el texto al elemento
+    li.textContent = elemento;
+    //egrego el li al listado
+    listado.appendChild(li);
+    //incremento la cantidad de tareas
+    total++;
+    cantidad.innerHTML = total;
 
 
- 
- //mostrar texto con api
+    //Agregamos el boton eliminar a cada elemento del listado
+    var btnEliminar = document.createElement("span");
+    btnEliminar.textContent = "\u00d7";
+    li.appendChild(btnEliminar);
 
-//  function mostrarMenu(){
-//     let valor= ""
-//     productos.forEach(element=>{
-//          valor+=
-//          `
-         
-//          <p><b>${element.nombre}:</b> ${element.descripcion}
-//          </p><br><p>${element.precio}</p>
-//          `
-//      })
-//      textoEl.innerHTML=valor
-// }
+
+    //Agregamos la funcionalidad que elimina del listado el elemento
+    btnEliminar.onclick = function() {
+        li.remove();
+        total--;
+        cantidad.innerHTML = total;
+    }
+
+    //limpiamos el campo
+    inputTarea.value = "";
+
+}
